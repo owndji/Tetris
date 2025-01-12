@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 
 namespace Tetris
 {
@@ -196,9 +197,19 @@ namespace Tetris
 
         private async void PlayAgain_Click(object sender, RoutedEventArgs e)
         {
-            gameState = new GameState();
+            gameState = new GameState(); // Réinitialiser l'état du jeu
             GameOverMenu.Visibility = Visibility.Hidden;
+
+            // Réinitialiser l'affichage du jeu
+            Draw(gameState);
+
+            // Lancer la boucle de jeu
             await GameLoop();
+        }
+
+        private void ClosePage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

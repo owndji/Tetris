@@ -1,0 +1,20 @@
+﻿<Page x:Class="Tetris.OptionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Options">
+    <Grid Background="LightBlue">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Current Key Bindings" FontSize="24" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Move Left: Left Arrow" Width="200" Height="50" Margin="0,10,0,0"/>
+            <TextBlock Text="Move Right: Right Arrow" Width="200" Height="50" Margin="0,10,0,0"/>
+            <TextBlock Text="Move Down: Down Arrow" Width="200" Height="50" Margin="0,10,0,0"/>
+            <TextBlock Text="Rotate Clockwise: Up Arrow" Width="200" Height="50" Margin="0,10,0,0"/>
+            <TextBlock Text="Rotate Counterclockwise: Z" Width="200" Height="50" Margin="0,10,0,0"/>
+            <TextBlock Text="Hold Block: C" Width="200" Height="50" Margin="0,10,0,0"/>
+            <TextBlock Text="Drop Block: Space" Width="200" Height="50" Margin="0,10,0,0"/>
+            <Button Content="Retour au menu" Width="200" Height="50" Click="BackToMenu_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
